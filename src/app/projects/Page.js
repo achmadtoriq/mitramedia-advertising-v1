@@ -9,7 +9,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const page = () => {
+const Page = () => {
   const [DataImg, setDataImg] = useState(projects);
   const [Choice, setChoice] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
@@ -131,4 +131,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
