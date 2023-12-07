@@ -1,6 +1,8 @@
+"use client"
 import React from "react";
 import { FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import dynamic from "next/dynamic";
 
 const OpenStreetMap = dynamic(
   () => import("@/components/Main/OpenStreetMap"),
