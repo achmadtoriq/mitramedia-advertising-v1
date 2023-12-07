@@ -1,4 +1,3 @@
-import OpenStreetMap from "@/components/Main/OpenStreetMap";
 import React from "react";
 import { FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
