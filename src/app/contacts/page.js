@@ -3,6 +3,13 @@ import React from "react";
 import { FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
+const OpenStreetMap = dynamic(
+  () => import("@/components/Main/OpenStreetMap"),
+  {
+    ssr: false,
+  }
+);
+
 const page = () => {
   const params = { lat:-7.3000424, lng:112.765686 } 
   return (
