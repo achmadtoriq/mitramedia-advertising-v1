@@ -5,6 +5,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import imageData from "../../../public/assets/data/imageSlider.json";
 import Hero from "./Hero";
+import Profesionals from "./Profesionals";
 
 const ImageBanner = () => {
   const [sliderRef] = useKeenSlider(
@@ -48,7 +49,10 @@ const ImageBanner = () => {
       <div ref={sliderRef} className="keen-slider lg:h-[50%]">
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/50 z-[2]" />
         {imageData.map((value, idx) => (
-          <div key={idx} className="keen-slider__slide number-slide1 lg:h-[50%]">
+          <div
+            key={idx}
+            className="keen-slider__slide number-slide1 lg:h-[50%]"
+          >
             <Image
               key={idx}
               src={"/assets/images/hero/" + value.path}
@@ -62,6 +66,7 @@ const ImageBanner = () => {
           </div>
         ))}
         <Hero />
+        <Profesionals />
       </div>
     </>
   );
