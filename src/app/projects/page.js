@@ -12,8 +12,8 @@ function classNames(...classes) {
 const page = () => {
   const [DataImg, setDataImg] = useState(projects);
   const [Choice, setChoice] = useState(0);
-  const [isOpen, setIsOpen] = useState(false);
-  const [isParam, setIsParam] = useState({});
+  const [IsOpen, setIsOpen] = useState(false);
+  const [IsParam, setIsParam] = useState({});
 
   function closeModal() {
     setIsOpen(false);
@@ -86,7 +86,7 @@ const page = () => {
         </div>
       </section>
 
-      <Transition appear show={isOpen} as={Fragment}>
+      <Transition appear show={IsOpen} as={Fragment}>
         <Dialog as="div" className="relative z-50" onClose={closeModal}>
           <Transition.Child
             as={Fragment}
@@ -113,7 +113,7 @@ const page = () => {
               >
                 <Dialog.Panel className="w-full transform rounded-2xl text-left align-middle shadow-xl transition-all lg:w-1/3">
                   <Image
-                    src={"/assets/images/projects/" + isParam.path}
+                    src={"/assets/images/projects/" + IsParam.path}
                     width={400}
                     height={24}
                     priority={true}
