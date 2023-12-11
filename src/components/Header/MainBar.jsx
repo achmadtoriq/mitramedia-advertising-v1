@@ -18,7 +18,7 @@ const MainBar = () => {
   return (
     <>
       <header
-        className={`fixed left-0 top-0 w-full z-10 py-2 ${
+        className={`fixed left-0 top-0 w-full z-20 py-2 ${
           scrollY > 100 ? "lg:bg-white" : "bg-opacity-75"
         }`}
       >

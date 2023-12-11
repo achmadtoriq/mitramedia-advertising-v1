@@ -1,4 +1,6 @@
+import Apa from "@/components/Main/Apa";
 import ImageBanner from "@/components/Main/ImageBanner";
+import Partners from "@/components/Main/Partners";
 import ProfesionalsMobile from "@/components/Main/ProfesionalsMobile";
 
 
@@ -7,9 +9,11 @@ export default function Home() {
     <main className="">
       <ImageBanner />
       <ProfesionalsMobile />
+      {/* <Apa/> */}
+      <Partners/>
 
 
-      <div className="flex flex-col items-center justify-between">
+      {/* <div className="flex flex-col items-center justify-between">
         <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -79,7 +83,8 @@ export default function Home() {
             </p>
           </a>
         </div>
-      </div>
+      </div> */}
+
     </main>
   );
 }
