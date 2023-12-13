@@ -56,27 +56,26 @@ const Partners = () => {
     <>
       <section className="bg-[#d1d1d1] text-[#3d3d3d]">
         <div className="container m-auto px-5 py-5 lg:px-28 lg:py-14">
-          <h1 className="text-center lg:text-4xl uppercase font-bold">
+          <h1 className="text-center text-xl lg:text-4xl uppercase font-bold lg:pb-7">
             our <span className="text-red-600">partners</span>
           </h1>
 
-          <div className="">
-            <div ref={sliderRef} className="keen-slider items-center">
-              {data.map((val, idx) => (
-                <div
-                  key={val.id_tipe}
-                  className="keen-slider__slide number-slide1"
-                >
-                  <Image
-                    src={`/assets/images/clients/${val.path}`}
-                    width={100}
-                    height={100}
-                    alt={val.altName}
-                    className="m-auto aspect-auto"
-                  />
-                </div>
-              ))}
-            </div>
+          <div ref={sliderRef} className="keen-slider items-center">
+            {data.map((val, idx) => (
+              <div
+                key={val.id_tipe}
+                className="keen-slider__slide number-slide1"
+              >
+                <Image
+                  src={`/assets/images/clients/${val.path}`}
+                  width={100}
+                  height={100}
+                  sizes="auto"
+                  alt={val.altName}
+                  className="m-auto aspect-auto"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
