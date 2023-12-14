@@ -2,7 +2,6 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Typed from "react-typed";
 import { motion, useAnimation } from "framer-motion";
 
 import { MdEmail } from "react-icons/md";
@@ -13,6 +12,7 @@ import {
   FaWhatsappSquare,
   FaPhoneSquare,
 } from "react-icons/fa";
+import TypeWriter from "../Main/TypeWriter";
 
 const MainFooter = () => {
   const controls = useAnimation();
@@ -86,14 +86,7 @@ const MainFooter = () => {
                 </motion.div>
                 <h1 className="italic font-semibold text-md my-8">
                   <blockquote>
-                    {/* " Your Trust Ads Partner. " */}
-                    <Typed
-                      className=""
-                      strings={['" Your Trust Ads Partner "']}
-                      typeSpeed={140}
-                      backSpeed={70}
-                      loop
-                    />
+                    <TypeWriter text={['" Your Trust Ads Partner "']} delay={200} infinite speedBreak={500} />
                   </blockquote>
                 </h1>
               </div>

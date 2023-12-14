@@ -11,7 +11,7 @@ export default function Home() {
       <ImageBanner />
       <ProfesionalsMobile />
       <Apa/>
-      <Partners/>
+      {/* <Partners/> */}
       {/* <YoutubePlayer /> */}
     </main>
   );
