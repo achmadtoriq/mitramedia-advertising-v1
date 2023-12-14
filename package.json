@@ -11,13 +11,10 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
-    "@splidejs/react-splide": "^0.7.12",
-    "@splidejs/splide": "^4.1.4",
     "framer-motion": "^10.6.8",
     "keen-slider": "^6.8.6",
     "leaflet": "^1.9.4",
     "next": "14.0.3",
-    "nodemailer": "^6.9.7",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
