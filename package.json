@@ -1,12 +1,12 @@
 {
   "name": "mitramedia_advertising",
   "version": "0.1.0",
-  "homepage": "",
+  "homepage": "https://achmadtoriq.pw",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {
